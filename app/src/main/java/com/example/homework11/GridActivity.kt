@@ -22,13 +22,12 @@ class GridActivity : AppCompatActivity() {
      Gridrecycl?.layoutManager=GridLayoutManager(applicationContext, 3)
      Gridrecycl?.adapter=adapterGrD
      }
-
-
 }
+
 private fun getData(): ArrayList<cusstomDataClass>{
     val data = arrayListOf<cusstomDataClass>()
     for (i in 1..1000){
-        data.add(cusstomDataClass(i, "data $i"))
+        data.add(cusstomDataClass(i, "data $i" ))
     }
     return data
 }

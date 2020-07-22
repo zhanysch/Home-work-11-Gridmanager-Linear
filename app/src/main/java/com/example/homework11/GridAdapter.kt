@@ -35,8 +35,5 @@ class GridAdapter(val list: ArrayList<cusstomDataClass>): RecyclerView.Adapter<G
            itemView.textgrid.text=cusstomDataClass.ttext
 
         }
-
     }
-
-
 }

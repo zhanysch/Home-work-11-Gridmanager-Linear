@@ -6,4 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".LinearActivity">
 
+    <androidx.recyclerview.widget.RecyclerView
+
+        android:id="@+id/Liear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        tools:itemCount="4"
+        tools:listitem="@layout/item_linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

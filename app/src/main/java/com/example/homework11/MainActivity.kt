@@ -3,16 +3,18 @@ package com.example.homework11
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.AdapterView
 import android.widget.Button
 import android.widget.Spinner
 
 class MainActivity : AppCompatActivity() {
+
     private var go: Button? = null
     private var spinner: Spinner? = null
     private var currentPosition: Int = 0
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -34,11 +36,12 @@ class MainActivity : AppCompatActivity() {
     private fun Turdata(): ArrayList<cusstomDataClass> {
         val data = arrayListOf<cusstomDataClass>()
 
-        data.add(cusstomDataClass(1, "выбери RecylerView"))
+        data.add(cusstomDataClass(1, "выбери RecylerView" ))
         data.add(cusstomDataClass(2, "Grid"))
-        data.add(cusstomDataClass(3 ,"Linear"))
+        data.add(cusstomDataClass(3, "Linear"))
         return data
     }
+
 
     private fun setSpinnerListener() {
         spinner?.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
